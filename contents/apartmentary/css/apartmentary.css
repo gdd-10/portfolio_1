@@ -1,0 +1,736 @@
+@import url(common.css);
+
+body {
+  /* font-family:'Red Hat Display', sans-serif; */
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+
+/* //////////헤더////////// */
+header {
+  position: relative;
+  width: 100%;
+  height: 980px;
+}
+.top {
+  position: relative;
+  z-index: 1000;
+}
+.logo {
+  float: left;
+  margin: 50px 50px;
+}
+nav {
+  float: right;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+nav ul {
+  width: 120px;
+}
+nav ul li {
+  position: relative;
+  padding-top: 12px;
+  height: 25px;
+}
+nav ul li span {
+  display: none;
+}
+.menuicon {
+  float: right;
+  margin: 50px 50px 50px 70px;
+}
+
+.storyshop {
+  position: absolute;
+  right: 50px;
+  top: 130px;
+  z-index: 1000;
+}
+/* //////////visual////////// */
+#visual {
+  position: absolute;
+  top: 0;
+  z-index: 900;
+  width: 1920px;
+  height: 980px;
+  overflow: hidden;
+}
+#visual > ul > li {
+  opacity: 0;
+}
+
+.visual1,
+.visual2,
+.visual3 {
+  position: absolute;
+  background: #f8f8f8;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 1920px;
+  height: 940px;
+}
+#visual p a {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 150px;
+  font-weight: 700;
+}
+/* //// visual1 //// */
+#visual ul li.visualshow {
+  opacity: 1;
+  z-index: 1100;
+  transition: all 0.3s;
+}
+.visual1 p a {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+.visual1 ul li {
+  position: absolute;
+  animation: ani linear 30s infinite;
+  width: 6200px;
+  height: 1080px;
+  top: 0;
+}
+@keyframes ani {
+  from {
+    left: 0;
+  }
+  to {
+    left: -3100px;
+  }
+}
+
+/* //// visual2 //// */
+/* .visual2{display:none;} */
+
+.visual2 p {
+  position: absolute;
+  top: 740px;
+  left: 97px;
+  letter-spacing: -71px;
+  transition: 0.8s all;
+  opacity: 0;
+}
+.visual2 .kitact {
+  letter-spacing: 0;
+  opacity: 1;
+}
+.visual2 ul {
+  width: 1920px;
+  height: 980px;
+}
+.visual2 ul li {
+  position: absolute;
+}
+
+.visual2 .kitchen1 {
+  left: 97px;
+  top: 160px;
+}
+.visual2 .kitchen2 {
+  left: 453px;
+  top: 160px;
+}
+.visual2 .kitchen3 {
+  left: 809px;
+  top: 160px;
+}
+.visual2 .kitchen4 {
+  left: 809px;
+  top: 440px;
+}
+.visual2 .kitchen5 {
+  left: 1175px;
+  top: 440px;
+}
+.visual2 .kitchen6 {
+  left: 1530px;
+  top: 440px;
+}
+
+/* //// visual3 //// */
+/* .visual3{display:none;} */
+.visual3 p {
+  position: absolute;
+  top: 320px;
+  left: 715px;
+  z-index: 1000;
+}
+.visual3 ul {
+  width: 1920px;
+  height: 980px;
+}
+.visual3 ul li {
+  position: absolute;
+}
+.visual3 .switch0 {
+  background: #b7d0f9;
+  width: 125px;
+  height: 110px;
+  top: 280px;
+  left: 890px;
+  z-index: 800;
+}
+.visual3 .switch1 {
+  left: 201px;
+  top: 105px;
+}
+.visual3 .switch2 {
+  left: 570px;
+  top: 473px;
+}
+.visual3 .switch3 {
+  left: 62px;
+  top: 703px;
+}
+.visual3 .switch4 {
+  left: 877px;
+  top: 522px;
+}
+.visual3 .switch5 {
+  left: 1185px;
+  top: 93px;
+}
+.visual3 .switch6 {
+  left: 1488px;
+  top: 437px;
+}
+.visual3 .switch7 {
+  left: 1320px;
+  top: 718px;
+}
+/* //// visual_btn //// */
+.visu_btn ul {
+  position: absolute;
+  top: 900px;
+  left: 700px;
+  font-weight: 400;
+  z-index: 2000;
+}
+.visu_btn ul li {
+  float: left;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  width: 160px;
+  text-align: center;
+}
+.visu_btn .active {
+  font-size: 24px;
+  font-weight: 1000;
+  position: relative;
+  top: -10px;
+}
+/* //////////SECTION////////// */
+/* ///section01/// */
+.content01 {
+  position: relative;
+  width: 1920px;
+}
+.content01 .about {
+  width: 560px;
+  margin: 200px 0 0 1150px;
+}
+.content01 .about h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.about p {
+  font-size: 20px;
+  line-height: 40px;
+}
+.about a {
+  position: relative;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  display: inline-block;
+  margin: 100px 0 0 370px;
+}
+
+.content01 h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 50px;
+  font-weight: 1000;
+  float: left;
+}
+.about .aboutbar {
+  position: absolute;
+  display: inline-block;
+  top: 50px;
+  left: 50%;
+  width: 0;
+  border-bottom: 1px solid #000;
+  transition: 0.8s all;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.about a:hover .aboutbar {
+  width: 153px;
+  opacity: 1;
+}
+/* five switch kitchen */
+.portfo {
+  float: right;
+  position: relative;
+}
+.portfo a {
+  position: relative;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 66px;
+  z-index: 100;
+}
+.portfo span {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 40px;
+  background: #b7d0f9;
+  left: -15px;
+  top: 11px;
+  z-index: 0;
+}
+.fivei,
+.switchi,
+.kitcheni {
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+}
+.fivei img,
+.switchi img,
+.kitcheni img {
+  transition: 0.8s all;
+  transform: scale(1);
+}
+.fiveimg a span,
+.switchimg a span,
+.kitchenimg a span {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  opacity: 0;
+  background: #000;
+  left: 0;
+  top: 0;
+  transition: 0.8s all;
+}
+.five p,
+.switch p,
+.kitchen p {
+  position: absolute;
+  top: 270px;
+  left: 250px;
+  text-align: center;
+  opacity: 0;
+  transition: 0.8s all;
+}
+.kitchen p {
+  left: 240px;
+  top: 310px;
+}
+.five p a,
+.switch p a,
+.kitchen p a {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 100;
+  line-height: 50px;
+}
+.five .view,
+.switch .view,
+.kitchen .view {
+  top: 470px;
+  left: 350px;
+  border: 1px solid #fff;
+}
+.five .view a,
+.switch .view a,
+.kitchen .view a {
+  font-size: 30px;
+  font-weight: 100;
+  padding: 5px 10px;
+}
+.fivei:hover .fiveimg span {
+  opacity: 0.7;
+}
+.fivei:hover .fiveimg img {
+  transform: scale(1.1);
+}
+.fivei:hover p {
+  opacity: 1;
+}
+.five {
+  position: relative;
+  top: -100px;
+  left: 30px;
+  width: 800px;
+}
+.five ul {
+  margin: 20px 10px 0 10px;
+}
+
+.five .portfo:hover span {
+  width: 163px;
+  transition: 0.5s all;
+}
+.five .portfo:hover a {
+  color: #fff;
+}
+
+.switch {
+  position: relative;
+  top: -200px;
+  left: 1080px;
+  width: 800px;
+}
+.switchi:hover .switchimg span {
+  opacity: 0.7;
+}
+.switchi:hover .switchimg img {
+  transform: scale(1.1);
+}
+.switchi:hover p {
+  opacity: 1;
+}
+
+.switch ul {
+  margin: 20px 10px 0 10px;
+}
+
+.switch .portfo:hover span {
+  width: 163px;
+  transition: 0.5s all;
+}
+.switch .portfo:hover a {
+  color: #fff;
+}
+.kitchen {
+  position: relative;
+  top: -300px;
+  left: 30px;
+  width: 800px;
+}
+.kitcheni:hover .kitchenimg span {
+  opacity: 0.7;
+}
+.kitcheni:hover .kitchenimg img {
+  transform: scale(1.1);
+}
+.kitcheni:hover p {
+  opacity: 1;
+}
+.kitchen ul {
+  margin: 20px 10px 0 10px;
+}
+.kitchen .portfo:hover span {
+  width: 163px;
+  transition: 0.5s all;
+}
+.kitchen .portfo:hover a {
+  color: #fff;
+}
+
+/* ///section02/// */
+.content02 {
+  position: relative;
+  margin-top: 100px;
+  width: 1920px;
+  height: 1680px;
+  background: #f8f8f8;
+  text-align: center;
+  z-index: 100;
+}
+.content02 h4 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 40px;
+  padding-top: 600px;
+}
+.content02 p {
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 50px;
+}
+.content02 p a {
+  position: relative;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  margin-top: 70px;
+}
+.content02 p a .readbar {
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  border-bottom: 1px solid #000;
+  width: 0;
+  transition: 0.8s all;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.content02 p a:hover .readbar {
+  width: 180px;
+  opacity: 1;
+}
+.productimg ul li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 200;
+}
+.productimg ul li img:last-of-type {
+  position: absolute;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: 0.5s all;
+}
+.productimg ul li img:first-of-type {
+  transform: scale(1);
+  transition: 0.5s all;
+}
+.productimg .product1 {
+  top: 380px;
+  left: 100px;
+}
+
+.productimg .product1 img:last-of-type {
+  left: 110px;
+  top: 115px;
+}
+.product1:hover img:first-of-type {
+  transform: scale(1.1);
+}
+.product1:hover img:last-of-type {
+  opacity: 1;
+  transform: scale(1);
+}
+.productimg .product2 {
+  top: 163px;
+  left: 700px;
+}
+.productimg .product2 img:last-of-type {
+  left: 136px;
+  top: 100px;
+}
+.product2:hover img:first-of-type {
+  transform: scale(1.1);
+}
+.product2:hover img:last-of-type {
+  opacity: 1;
+  transform: scale(1);
+}
+.productimg .product3 {
+  top: 317px;
+  left: 1382px;
+}
+.productimg .product3 img:last-of-type {
+  left: 56px;
+  top: 35px;
+}
+.product3:hover img:first-of-type {
+  transform: scale(1.1);
+}
+.product3:hover img:last-of-type {
+  opacity: 1;
+  transform: scale(1);
+}
+.productimg .product4 {
+  top: 654px;
+  left: 1500px;
+}
+.productimg .product4 img:last-of-type {
+  left: 83px;
+  top: 136px;
+}
+.product4:hover img:first-of-type {
+  transform: scale(1.1);
+}
+.product4:hover img:last-of-type {
+  opacity: 1;
+  transform: scale(1);
+}
+.productimg .product5 {
+  top: 1150px;
+  left: 1030px;
+}
+.productimg .product5 img:last-of-type {
+  left: 170px;
+  top: 83px;
+}
+.product5:hover img:first-of-type {
+  transform: scale(1.1);
+}
+.product5:hover img:last-of-type {
+  opacity: 1;
+  transform: scale(1);
+}
+.productimg .product6 {
+  top: 1005px;
+  left: 300px;
+}
+.productimg .product6 img:last-of-type {
+  left: 85px;
+  top: 83px;
+}
+.product6:hover img:first-of-type {
+  transform: scale(1.1);
+}
+.product6:hover img:last-of-type {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* //////////FOOTER////////// */
+footer {
+  width: 1920px;
+  border-top: 2px solid #666;
+  background: #f8f8f8;
+}
+.footer0 {
+  width: 1788px;
+  margin: 0 auto;
+}
+.footer01,
+.footer02,
+.footer03 {
+  float: left;
+  width: 570px;
+  height: 380px;
+  border-right: 2px solid #666;
+}
+.footer0 h5 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+.footer01 {
+  border-left: 2px solid #666;
+}
+.footer01_1 {
+  text-align: right;
+  margin: 40px 40px 0 0;
+}
+
+.footer01 .tel {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 30px;
+  font-weight: 1000;
+  margin-top: 30px;
+}
+.footer01 .kakao {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.footer01 .email {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.footer01 .cs_4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.footer01 .cs_4 span {
+  font-family: "Red Hat Display", sans-serif;
+}
+address {
+  font-style: normal;
+  margin-top: 50px;
+  font-size: 16px;
+}
+address span {
+  font-family: "Red Hat Display", sans-serif;
+}
+.footer02 {
+  width: 640px;
+}
+.footer02_1 {
+  text-align: center;
+  margin: 40px 60px 0 60px;
+}
+.footer02 ul li {
+  float: left;
+}
+.footer02 ul li:nth-child(n + 1):nth-child(-n + 2) {
+  margin-right: 110px;
+}
+.footer02 ul li a {
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer02_2 {
+  font-size: 16px;
+  margin-top: 35px;
+  text-align: left;
+}
+.footer02_2 p {
+  margin-top: 15px;
+}
+.footer02_2 p span {
+  margin-right: 12px;
+}
+.footer02_tel {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+}
+.footer02_2 .copy {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.footer03_1 {
+  margin: 40px 0 0 40px;
+}
+.footer03_1 ul li {
+  float: left;
+}
+.footer03_1 .snsicon {
+  margin-bottom: 60px;
+}
+.footer03_1 .snsicon li {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  margin: 20px 10px 0 0;
+}
+.footer03_1 .snsicon li img:last-child {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s all;
+  left: 0;
+  top: 0;
+}
+.footer03_1 .insta:hover img:last-child {
+  opacity: 1;
+}
+.footer03_1 .naver:hover img:last-child {
+  opacity: 1;
+}
+.footer03_1 .youtube:hover img:last-child {
+  opacity: 1;
+}
+.footer03_1 .facebook:hover img:last-child {
+  opacity: 1;
+}
+.footer03_1 .footermenu {
+  margin-top: 30px;
+}
+.footermenu li a {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 10px;
+}

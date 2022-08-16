@@ -1,0 +1,1091 @@
+@import url(common.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'GmarketSansLight'; */
+/* font-family: 'GmarketSansMedium'; */
+/* font-family: 'GmarketSansBold'; */
+/* font-family: 'Jacques Francois Shadow', cursive; */
+
+body {
+  width: 100%;
+  height: 100%;
+}
+/* ///////////////////////////////////////메인페이지 */
+#warp {
+  width: 100%;
+  min-width: 1200px;
+  margin: 0 auto;
+}
+nav#nav h1 img {
+  cursor: pointer;
+}
+#main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+#main .nav_main {
+  height: 50px;
+  line-height: 50px;
+  padding-top: 50px;
+}
+#main .nav_main h1 {
+  float: left;
+  margin-left: 100px;
+}
+#main .nav_main ul {
+  float: right;
+  margin-right: 100px;
+}
+#main .nav_main ul li {
+  float: left;
+}
+#main .nav_main ul li:not(last-child) {
+  margin-right: 30px;
+}
+#main .nav_main ul li a {
+  font-family: "GmarketSansLight";
+  font-size: 20px;
+}
+
+#main .text h2 {
+  margin-top: 80px;
+  font-family: "Jacques Francois Shadow", cursive;
+  font-size: 100px;
+  color: #394a2d;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 100px;
+}
+#main .text h2 span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+#main .text p {
+  font-family: "GmarketSansLight";
+  font-size: 20px;
+  text-align: center;
+}
+#main .text p.text_p1 {
+  margin-bottom: 10px;
+}
+
+#main .main_slide ul {
+  position: absolute;
+  overflow: hidden;
+  bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  animation: slideani 40s infinite linear;
+}
+
+@keyframes slideani {
+  from {
+    right: -3149px;
+  }
+  to {
+    right: 0;
+  }
+}
+#main .main_slide ul li {
+  position: relative;
+  background: #ccc;
+  float: left;
+  margin-right: 57px;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+#main .main_slide ul li:hover {
+  transform: scale(1.03);
+}
+#main .main_slide .img_1 {
+  width: 317px;
+  height: 256px;
+  background: url(../images/event_design.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_2 {
+  width: 274px;
+  height: 274px;
+  background: url(../images/apartmentery_thumb.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_3 {
+  width: 162px;
+  height: 170px;
+  background: url(../images/popup1.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_4 {
+  width: 320px;
+  height: 323px;
+  background: url(../images/arte_thumb.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_5 {
+  width: 317px;
+  height: 256px;
+  background: url(../images/artwork.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_6 {
+  width: 274px;
+  height: 311px;
+  background: url(../images/josunhotel_mokup.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_7 {
+  width: 162px;
+  height: 170px;
+  background: url(../images/curban_thumb.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_8 {
+  width: 274px;
+  height: 311px;
+  background: url(../images/web.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_9 {
+  width: 317px;
+  height: 256px;
+  background: url(../images/koreazinc_mokup.png) no-repeat center center;
+  background-size: cover;
+}
+#main .main_slide .img_10 {
+  width: 162px;
+  height: 170px;
+  background: url(../images/reponsive_design.png) no-repeat center center;
+  background-size: cover;
+}
+
+#main .main_slide_bg {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: #394a2d;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* ///////////////////////////////////////프로필 */
+
+#profile {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  min-width: 1200px;
+  overflow: hidden;
+  background: #fff;
+  z-index: 100;
+}
+#profile h2 {
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #394a2d;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+}
+#profile .container {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+}
+#profile .profile_left {
+  width: 50%;
+}
+#profile .profile_left .img .bg {
+  position: relative;
+  width: 530px;
+  height: 668px;
+  background: #98a287;
+  z-index: 0;
+  left: 28.6%;
+}
+#profile .profile_left .img .bg .border {
+  position: absolute;
+  border: 3px solid #576d46;
+  width: inherit;
+  height: inherit;
+  z-index: 1;
+  top: 40px;
+  left: -40px;
+  overflow: hidden;
+  padding: 30px 27px;
+  box-sizing: border-box;
+}
+
+#profile .profile_left .img .bg .border .border_img_contain {
+  height: 100%;
+  overflow: hidden;
+}
+
+#profile .profile_left .img .bg .border img {
+  object-fit: contain;
+}
+
+#profile .profile_left .img .bg p {
+  position: absolute;
+  font-family: "GmarketSansMedium";
+  font-size: 30px;
+  color: #394a2d;
+  right: 0;
+  bottom: -95px;
+}
+
+#profile .profile_right {
+  width: 50%;
+  margin-left: 14%;
+}
+#profile .profile_right > ul > li:not(:first-child) {
+  margin-top: 30px;
+}
+#profile .profile_right > ul > li h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #394a2d;
+}
+#profile .profile_right > ul > li > p {
+  font-family: "GmarketSansLight";
+  font-size: 18px;
+  color: #333;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#profile .profile_right > ul > li .edu_p2 {
+  margin-top: 10px;
+}
+
+/* skills */
+#profile .profile_right > ul .skills ul {
+  margin-top: 30px;
+}
+#profile .profile_right > ul .skills ul li {
+  position: relative;
+  width: 130px;
+  height: 170px;
+  background: #98a287;
+  float: left;
+  border-radius: 35px;
+  text-align: center;
+  transition: all 0.7s;
+}
+#profile .profile_right > ul .skills ul li:not(:first-child) {
+  margin-left: 10px;
+}
+#profile .profile_right > ul .skills ul li .skillname {
+  position: absolute;
+  font-family: "GmarketSansMedium";
+  font-size: 18px;
+  color: #fff;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#profile .profile_right > ul .skills ul li img {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotateY(180deg);
+}
+#profile .profile_right > ul .skills ul li .skillv {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotateY(180deg);
+  font-family: "GmarketSansLight";
+  font-size: 24px;
+  color: #333;
+}
+
+/* ///////////////////////////////////////퍼블리싱 목차 */
+#pub_index {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 200;
+  overflow: hidden;
+  background: #fff;
+}
+#pub_index h2 {
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #394a2d;
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+}
+/* 메뉴부분 */
+#pub_index .index_text {
+  position: relative;
+  text-align: center;
+  z-index: 4;
+}
+#pub_index .index_text ul {
+  margin-top: 140px;
+}
+#pub_index .index_text ul li:not(:last-child) {
+  margin-bottom: 80px;
+}
+#pub_index .index_text ul li span {
+  font-family: "GmarketSansLight";
+  font-size: 40px;
+  color: #394a2d;
+  cursor: pointer;
+}
+#pub_index .index_text ul li span:hover {
+  font-family: "GmarketSansBold";
+}
+/* 이미지 */
+#pub_index .pub_idx_img ul li img {
+  position: relative;
+  opacity: 0;
+}
+#pub_index .pub_idx_img ul li {
+  position: absolute;
+  bottom: 60px;
+  width: 300px;
+  height: 300px;
+  background: #ccc;
+  z-index: 1;
+  transition: all 0.8s;
+  overflow: hidden;
+}
+#pub_index .pub_idx_img ul li:nth-child(1) {
+  background: url(../images/apartmentery_thumb.png) no-repeat center center;
+  background-size: cover;
+  left: 30px;
+}
+#pub_index .pub_idx_img ul li:nth-child(2) {
+  background: url(../images/koreazinc_thumb.png) no-repeat center center;
+  background-size: cover;
+  left: 380px;
+}
+#pub_index .pub_idx_img ul li:nth-child(3) {
+  background: url(../images/curban_thumb.png) no-repeat center center;
+  background-size: cover;
+  left: 1240px;
+}
+#pub_index .pub_idx_img ul li:nth-child(4) {
+  background: url(../images/arte_thumb.png) no-repeat center center;
+  background-size: cover;
+  left: 1590px;
+}
+#pub_index .pub_idx_img ul li.pub_img_trans {
+  left: 1220px;
+  bottom: 30px;
+  width: 670px;
+  height: 827px;
+  border: 1px solid #394a2d;
+  border-radius: 30px;
+  z-index: 3;
+  transition: all 0.8s;
+}
+
+/* 글 배경 */
+#pub_index .pub_idx_bg ul li {
+  position: absolute;
+  bottom: 30px;
+  width: 300px;
+  height: 300px;
+  background: #394a2d;
+  z-index: 0;
+  transition: all 0.7s;
+}
+#pub_index .pub_idx_bg ul li:nth-child(1) {
+  left: 50px;
+}
+#pub_index .pub_idx_bg ul li:nth-child(2) {
+  left: 400px;
+}
+#pub_index .pub_idx_bg ul li:nth-child(3) {
+  left: 1220px;
+}
+#pub_index .pub_idx_bg ul li:nth-child(4) {
+  left: 1570px;
+}
+#pub_index .pub_idx_bg ul li.pub_bg_trans {
+  bottom: 550px;
+  left: 30px;
+  width: 670px;
+  border-radius: 30px;
+}
+/* 배경 글 */
+#pub_index .pub_idx_bg ul li div {
+  display: none;
+}
+#pub_index .pub_idx_bg ul li div h3 {
+  position: absolute;
+  font-family: "GmarketSansBold";
+  font-size: 30px;
+  color: #fff;
+  right: 20px;
+  top: 20px;
+}
+#pub_index .pub_idx_bg ul li div h4 {
+  position: absolute;
+  font-family: "GmarketSansBold";
+  font-size: 68px;
+  color: #fff;
+  top: 95px;
+  left: 30px;
+  white-space: nowrap;
+}
+#pub_index .pub_idx_bg ul li div p {
+  position: absolute;
+  font-family: "GmarketSansBold";
+  font-size: 48px;
+  color: #fff;
+  top: 170px;
+  left: 30px;
+}
+
+/* 1900px 이하에선 안보이기 */
+@media all and (max-width: 1900px) {
+  #pub_index .pub_idx_img,
+  #pub_index .pub_idx_bg {
+    display: none;
+  }
+}
+
+/* 메뉴바 */
+.nav_w {
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  border-bottom: 1px solid #75816d;
+  background-color: #394a2d;
+  transition: background-color 0.5s;
+}
+.nav_w h1 {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav_w ul {
+  float: right;
+  margin-right: 30px;
+}
+.nav_w ul li {
+  float: left;
+  line-height: 8vh;
+}
+.nav_w ul li:not(:last-child) {
+  margin-right: 50px;
+}
+.nav_w ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ccc;
+  font-size: 20px;
+  transition: color 0.5s;
+}
+.nav_w ul li a:hover {
+  color: #fff;
+}
+
+.nav_w ul li.top_btn a {
+  font-weight: 400;
+  border: 1px solid #fff;
+  border-radius: 17px;
+  padding: 5px 15px;
+  color: #fff;
+}
+
+.nav_g {
+  width: 100%;
+  height: 8vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  border-bottom: none;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+.nav_g h1 {
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav_g ul {
+  float: right;
+  margin-right: 30px;
+}
+.nav_g ul li {
+  float: left;
+  line-height: 8vh;
+}
+.nav_g ul li:not(:last-child) {
+  margin-right: 50px;
+}
+.nav_g ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #98a287;
+  font-size: 20px;
+  transition: 0.3s all;
+  transition: color 0.5s;
+}
+.nav_g ul li a:hover {
+  color: #394a2d;
+}
+
+.nav_g ul li.top_btn a {
+  font-weight: 400;
+  border: 1px solid #394a2d;
+  border-radius: 17px;
+  padding: 5px 15px;
+  color: #394a2d;
+}
+/* ///////////////////////////////////////퍼블리싱 컨텐츠 */
+/* 공통사용 */
+
+/* 퍼블리싱 배경부분(공통) */
+/* ul.bg_line_t{border-bottom:1px solid #75816d;} */
+ul.bg_line_t li {
+  height: 12.7vh;
+  float: left;
+  border-right: 1px solid #75816d;
+}
+ul.bg_line_t li:first-child {
+  width: 52.5%;
+}
+ul.bg_line_t li:last-child {
+  width: 42%;
+}
+ul.bg_line_b li {
+  height: 7.3vh;
+  float: left;
+  border-top: 1px solid #75816d;
+  border-right: 1px solid #75816d;
+}
+ul.bg_line_b li:first-child {
+  width: 52.5%;
+}
+ul.bg_line_b li:nth-child(2) {
+  width: 42%;
+}
+ul.bg_line_b li:nth-child(3) {
+  width: 5.3%;
+  border-right: 0;
+}
+
+/* 퍼블리싱 이미지영역(공통) */
+.c_container {
+  display: flex;
+}
+.c_container .c_row_1 {
+  display: flex;
+  width: 52.5%;
+  height: 80vh;
+  border-right: 1px solid #75816d;
+  justify-content: center;
+}
+.c_container .c_row_1 .c_img {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: inherit;
+  /* background:#fff; */
+}
+.c_container .c_row_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 42%;
+  height: 80vh;
+  border-right: 1px solid #75816d;
+}
+
+/* 퍼블리싱 글자영역(공통) */
+.pub_content_text > li:nth-child(1) .html_img,
+.css_img {
+  margin-right: 10px;
+}
+.pub_content_text > li:nth-child(2) {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 20px;
+}
+.pub_content_text > li:nth-child(3) {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 30px;
+}
+.pub_content_text > li:nth-child(4) {
+  font-family: "GmarketSansLight";
+  font-size: 24px;
+  color: #fff;
+  margin-top: 15px;
+}
+.pub_content_text > li:nth-child(5) {
+  font-family: "GmarketSansLight";
+  font-size: 24px;
+  color: #fff;
+  margin-top: 15px;
+}
+.pub_content_text > li:nth-child(6) {
+  position: relative;
+  font-family: "GmarketSansBold";
+  font-size: 24px;
+  color: #394a2d;
+  width: 100%;
+  text-align: right;
+  padding: 4px 0px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+.pub_content_text > li:nth-child(6) .anibar {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 0;
+  height: 100%;
+  transition: 1s all;
+}
+.pub_content_text > li:nth-child(6) .text {
+  position: relative;
+  z-index: 1;
+}
+.pub_content_text > li:nth-child(6) div {
+  position: absolute;
+  top: 0;
+  /* left:-100%; */
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 0;
+}
+.pub_content_text > li:nth-child(7) {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.pub_content_btn li:hover {
+  background: #eaeaea;
+  box-shadow: inset 6px 8px 20px #394730, inset -8px -8px 20px #fff;
+}
+
+/* 디테일 뷰 모달창 */
+.detail_view {
+  display: none;
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  overflow-y: scroll;
+}
+.detail_img {
+  position: absolute;
+  width: 80%;
+  min-height: 100%;
+  left: -80%;
+  top: 0;
+}
+.detail_img ul li {
+  display: none;
+}
+.close_btn {
+  position: fixed;
+  left: calc(80% + 20px);
+  width: 30px;
+  height: 30px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+.close_btn .close_btn_text {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s all;
+  opacity: 0;
+}
+.close_btn:hover .close_btn_text {
+  opacity: 1;
+}
+.close_btn .close_btn_in::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  border: 1px solid #fff;
+  transition: 0.5s all;
+  top: 15px;
+  transform: rotate(45deg);
+}
+.close_btn .close_btn_in::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  width: 30px;
+  border: 1px solid #fff;
+  transition: 0.5s all;
+  transform: rotate(-45deg);
+}
+
+.close_btn:hover .close_btn_in::before {
+  transform: rotate(0);
+  top: 0px;
+}
+.close_btn:hover .close_btn_in::after {
+  transform: rotate(0);
+  top: 30px;
+}
+/* 반응형 모달창 */
+.detail_view .responsive_btn {
+  position: fixed;
+  left: calc(80% + 20px);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #afafaf;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.7s all;
+  display: none;
+}
+.detail_view .responsive_btn.fff {
+  color: #fff;
+}
+.detail_view .responsive_btn.afafaf {
+  color: #afafaf;
+}
+.detail_view .responsive_btn:hover {
+  color: #fff;
+}
+.detail_view .responsive_btn span {
+  position: absolute;
+  width: 0%;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.7s all;
+}
+.detail_view .responsive_btn:hover span {
+  width: 100%;
+  border: 1px solid #fff;
+}
+.detail_view .responsive_btn .responsive_btn_click {
+  width: 100%;
+  border: 1px solid #fff;
+}
+.detail_view .pc_btn {
+  top: 90px;
+  color: #fff;
+}
+.detail_view .tablet_btn {
+  top: 150px;
+}
+.detail_view .mobile_btn {
+  top: 210px;
+}
+
+/* 반응형 사이트 뷰 버튼 */
+.resview_btn {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  color: #394a2d;
+  display: flex;
+  justify-content: flex-end;
+  width: 480px;
+  top: 65px;
+}
+.resview_btn li {
+  width: 150px;
+  background: #fff;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.resview_btn li:hover {
+  background: #eaeaea !important;
+  box-shadow: inset 6px 8px 20px #394730, inset -8px -8px 20px #fff;
+}
+
+.btn_shadow {
+  background: #eaeaea !important;
+  box-shadow: inset 6px 8px 20px #394730, inset -8px -8px 20px #fff;
+}
+/* 버튼 */
+.pub_content_btn {
+  margin-top: 10px;
+}
+.pub_content_btn li {
+  float: left;
+  width: 150px;
+  height: 45px;
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+  color: #394a2d;
+  cursor: pointer;
+}
+.pub_content_btn li a {
+  display: block;
+}
+.pub_content_btn li:first-child {
+  margin-right: 10px;
+}
+
+#pub_content_mo .pub_content_btn li {
+  margin-right: 0;
+}
+/* 퍼블리싱 본내용 */
+#pub_content_m,
+#pub_content_m2,
+#pub_content_ms,
+#pub_content_re,
+#pub_content_mo {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #394a2d;
+}
+#pub_content_m {
+  z-index: 300;
+}
+#pub_content_m2 {
+  z-index: 400;
+}
+#pub_content_ms {
+  z-index: 500;
+}
+#pub_content_re {
+  z-index: 600;
+}
+#pub_content_mo {
+  z-index: 700;
+}
+
+/* ///////////////////////////////////////그래픽 디자인*/
+#g-design {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  z-index: 800;
+}
+#g-design h2 {
+  font-family: "Jacques Francois Shadow", cursive;
+  color: #394a2d;
+  font-weight: 400;
+  font-size: 40px;
+  position: absolute;
+  left: 210px;
+  top: 6vh;
+  text-shadow: -25px 15px 12px rgba(57, 71, 48, 0.5);
+}
+#g-design .g-img li img {
+  height: 100%;
+  max-width: 10000px;
+}
+#g-design .g-img li {
+  position: absolute;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+}
+#g-design .g-img li:not(:nth-child(3)) img {
+  display: none;
+}
+
+#g-design .g-img li:nth-child(1) {
+  top: 23.1%;
+  left: 3.6%;
+  width: 270px;
+  height: 270px;
+  opacity: 0;
+  box-shadow: 15px 15px 70px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  filter: blur(2px);
+}
+#g-design .g-img li:nth-child(1).designani1 {
+  animation: designani1 1s forwards;
+  animation-delay: 0.3s;
+}
+@keyframes designani1 {
+  from {
+    opacity: 0;
+    top: 33.1%;
+  }
+  to {
+    opacity: 0.5;
+    top: 23.1%;
+  }
+}
+#g-design .g-img li:nth-child(2) {
+  top: 42.1%;
+  left: 13.8%;
+  width: 420px;
+  height: 440px;
+  opacity: 0;
+  box-shadow: 15px 15px 70px rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  filter: blur(1px);
+}
+#g-design .g-img li:nth-child(2).designani2 {
+  animation: designani2 1s forwards;
+  animation-delay: 0.5s;
+}
+@keyframes designani2 {
+  from {
+    opacity: 0;
+    top: 52.1%;
+  }
+  to {
+    opacity: 0.7;
+    top: 42.1%;
+  }
+}
+#g-design .g-img li:nth-child(3) {
+  top: 10.2%;
+  left: 31.7%;
+  width: 700px;
+  height: 800px;
+  opacity: 0;
+  box-shadow: 0px 15px 80px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+#g-design .g-img li:nth-child(3).designani3 {
+  animation: designani3 1s forwards;
+  animation-delay: 0.7s;
+}
+@keyframes designani3 {
+  from {
+    opacity: 0;
+    top: 20.2%;
+  }
+  to {
+    opacity: 0.9;
+    top: 10.2%;
+  }
+}
+#g-design .g-img li:nth-child(4) {
+  top: 23.1%;
+  left: 64.3%;
+  width: 420px;
+  height: 440px;
+  opacity: 0;
+  box-shadow: -15px 15px 70px rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  filter: blur(1px);
+}
+#g-design .g-img li:nth-child(4).designani4 {
+  animation: designani4 1s forwards;
+  animation-delay: 0.9s;
+}
+@keyframes designani4 {
+  from {
+    opacity: 0;
+    top: 33.1%;
+  }
+  to {
+    opacity: 0.9;
+    top: 23.1%;
+  }
+}
+#g-design .g-img li:nth-child(5) {
+  top: 63.4%;
+  left: 82.3%;
+  width: 270px;
+  height: 270px;
+  opacity: 0;
+  box-shadow: -15px 15px 70px rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  filter: blur(2px);
+}
+#g-design .g-img li:nth-child(5).designani5 {
+  animation: designani5 1s forwards;
+  animation-delay: 1.1s;
+}
+@keyframes designani5 {
+  from {
+    opacity: 0;
+    top: 73.4%;
+  }
+  to {
+    opacity: 0.9;
+    top: 63.4%;
+  }
+}
+#g-design .g-img li.g-img_1 {
+  background: url(../images/popup1.png) no-repeat center center;
+  background-size: cover;
+}
+#g-design .g-img li.g-img_2 {
+  background: url(../images/event_design.png) no-repeat center center;
+  background-size: cover;
+}
+#g-design .g-img li.g-img_3 {
+  background: url(../images/web.png) no-repeat center center;
+  background-size: cover;
+}
+#g-design .g-img li.g-img_4 {
+  background: url(../images/artwork.png) no-repeat center center;
+  background-size: cover;
+}
+#g-design .g-img li.g-img_5 {
+  background: url(../images/reponsive_design.png) no-repeat center center;
+  background-size: cover;
+}

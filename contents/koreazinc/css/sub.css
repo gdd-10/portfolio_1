@@ -1,0 +1,486 @@
+@import url(common.css);
+@import url(sheader.css);
+@import url(footer.css);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+#wrap{width:100%;}
+header, section, footer{width:inherit;}
+.bluetxt{
+    color:#253a7f;
+    font-weight:500;
+}
+
+section{margin-top:50px;}
+/* //////////////인사말(about1)/////////////// */
+.about1_section{padding-bottom:300px;}
+.about1_section_in{
+    position:relative;
+    height:1100px;
+    background:#93a8c2;
+}
+.about1_section_in .about1_contents{
+    width:1200px;
+    margin:0 auto;
+}
+.about1_section_in .about1_contents .a1title{
+    color:#fff;
+    font-size:24px;
+    font-weight:700;
+    padding-top:75px;
+    position:relative;
+    z-index:1;
+}
+.about1_section_in .about1_contents .a1content{
+    font-size:16px;
+    color:#fff;
+    margin-top:70px;
+}
+.about1_section_in .about1_contents .a1foot{
+    font-size:24px;
+    font-weight:700;
+    color:#fff;
+    margin-top:125px;
+}
+.about1_section_in .about1_contents .about1_photo img{
+    position:absolute;
+    bottom:-37px;
+    right:300px;
+}
+.about1_section_in .about1_contents .about1_sign img{
+    position:absolute;
+    bottom:90px;
+    left:550px;
+}
+.about1_section_in .about1_contents .about1_box{
+    position:absolute;
+    width:75px;
+    height:75px;
+    background:#253a7f;
+    top:40px;
+    left:320px;
+    z-index:0;
+    box-shadow:2px 2px 5px #666;
+}
+
+/* //////////////개요(about2)/////////////// */
+.about2s{
+    background:url(../image/about2.jpg);
+    width:100%;
+    background-attachment:fixed;
+    background-size:cover;
+}
+.about2_1{
+    background:#fff;
+    padding-bottom:200px;
+}
+.about2_1_in{
+    width:1200px;
+    margin:100px auto 0 auto;
+    margin-top:100px;
+}
+.about2_1_1{margin-right:100px;}
+.about2_1_1, .about2_1_2{
+    float:left;
+    width:550px;
+}
+.about2_1_in .about2_1_1{
+    position:relative;
+    font-size:24px;
+    font-weight:300;
+    line-height:40px;
+}
+.about2_1_in .about2_1_1 span{
+    color:#253a7f;
+    font-weight:500;
+}
+.about2_1_in .about2_1_1 .line{
+    position:relative;
+    top:-7px;
+    border-top:1px solid #253a7f;
+    width:30px;
+    display:inline-block;
+}
+.about2_1_in .about2_1_1 .line1{
+    margin-right:20px;
+}
+.about2_1_in .about2_1_1 .line2{
+    width:120px;
+    margin-left:20px;
+}.about2_1_in .about2_1_1 .about2_1_1_img{
+    position:absolute;
+    width:700px;
+    height:300px;
+    background:url(../image/about2_1.png) no-repeat;
+    display:block;
+    top:150px;
+    left:-200px;
+    box-shadow:-5px 8px 8px #999;
+}
+.about2_1_in .about2_1_2{
+    line-height:30px;
+}
+
+.about2_2{
+    position:relative;
+    margin-top:450px;
+    background:#fff;
+    padding-bottom:100px;
+}
+.about2_2_in{
+    position:relative;
+    padding-top:150px;
+    width:1200px;
+    margin:0 auto;
+    top:-150px;
+    background:#fff;
+    box-shadow:0px 5px 10px #999;
+}
+.about2_2_in .about2_2_1{
+    width:900px;
+    margin:0 auto;
+    line-height:35px;
+    font-size:20px;
+}
+
+/* 테이블 */
+.about2_table{
+    padding-bottom:150px;
+    width:1000px;
+    margin:100px auto 0px auto;    
+}
+.about2_table table{
+    font-size:16px;
+    border-top:3px solid #999;
+}
+.about2_table table th{
+    width:15%;
+    font-weight:500;
+}
+.about2_table table td{
+    width:35%;
+}
+.about2_table table th, .about2_table table td{
+    padding:15px 0 15px 0;
+    border-top:1px solid #999;
+}
+.about2_table table tr:last-child{
+    border-bottom:1px solid #999;
+}
+
+/* //////////////제품(product)/////////////// */
+.empty{height:100px;}
+.product_in_contents>li{
+    display:none;
+}
+.product_in_contents>li:nth-child(1){
+    display:block;
+}
+
+.product_section_bg{
+    position:relative;
+    margin-top:150px;
+    background:url(../image/about2.jpg);
+    background-size:cover;
+    background-attachment:fixed;
+    width:100%;
+    margin-bottom:150px;
+}
+h5{
+    font-size:38px;
+    font-weight:500;
+    margin:0 0 50px 30px;
+    padding-top:60px;
+}
+h5 span{
+    font-size:22px;
+    color:#253a7f;
+    font-weight:300;
+    margin-left:15px;
+}
+
+.product_in{
+    width:1200px;
+    margin:0 auto;
+    background:#fff;
+    padding-bottom:100px;
+}
+.product_in_contents>li>ul{margin-left:50px;}
+.product_in_contents>li>ul>li{
+    width:530px;
+    float:left;
+    font-size:18px;
+    line-height:32px;
+}
+.product_in_contents>li>ul>li:first-child{margin-right:80px;}
+.product_in_contents>li>ul>li p{
+    position:relative;
+    top:-4px;
+    color:#253a7f;
+    float:left;
+    font-weight:700;
+}
+.product_in_contents>li>ul>li p .material-icons{
+    position:relative;
+    top:6px;
+    font-size:26px;
+}
+.product_in_contents>li>ul>li ul{
+    float:right;
+    margin-right:120px;
+    font-size:16px;
+
+}
+
+.product_table table{
+    width:530px;
+    font-size:16px;
+    border-top:3px solid #999;
+}
+.product_table table caption{
+    text-align:left;
+    font-size:20px;
+    font-weight:500;
+    padding:0 0 10px 10px;
+    }
+.product_table table th, .product_table table td{
+    padding:10px 0 10px 0;
+    text-align:center;
+    border-top:1px solid #999;
+}
+
+.product_table table tr:last-child{
+    border-bottom:1px solid #999;
+}
+.product_d1{
+    margin-top:120px;
+}
+.product_d2{
+    margin-top:100px;
+}
+.linktable{margin-top:50px;}
+
+.tablehead{background:#e8e8e8;}
+
+/* ///////////////////아연의 세계//////////////////// */
+.story_smenu ul{
+    position:fixed;
+    z-index:9999;
+    top:350px;
+    right:50px;
+    width:150px;
+    display:none;
+}
+.story_smenu ul li{
+    position:relative;
+    width:130px;
+    height:45px;
+    border-radius:35px;
+    text-align:center;
+    margin-bottom:10px;
+    box-shadow:1px 2px 3px #ccc;
+    background:#fff;
+    right:0;
+    transition:0.5s all;
+}
+.story_smenu ul li:hover{
+    background:#253a7f;
+    color:#fff;
+    right:10px;
+    box-shadow:none;
+}
+.story_smenu ul .story_smenu_on{
+    background:#253a7f;
+    color:#fff;
+    right:10px;
+    box-shadow:none;
+}
+.story_smenu ul li a{
+    font-size:16px;
+    line-height:45px;
+    display:block;
+}
+
+.story_section_in{
+    width:1200px;
+    margin:0 auto 150px auto;
+}
+
+#eiffel, #sahara, #trans, #sunlight, #housing{
+    border-top:1px solid #ccc;
+    margin-bottom:30px;
+    padding-bottom:30px;
+}
+
+.story_section_in>div>ul>li{
+    float:left;
+    width:580px;
+}
+.story_section_in>div>ul li:first-child{margin-right:40px;}
+
+.storytxt_t{
+    font-weight:500;
+    font-size:24px;
+    margin-bottom:30px;
+}
+.storytxt span{color:#999;}
+	
+/* //////////////신문고/////////////// */		
+.m1_section_in_txt .m1_t1{
+    width:1200px;
+    margin:0 auto;
+    text-align:center;
+    font-size:18px;
+    border-top:1px solid #ccc;
+    margin-top:30px;
+    padding-top:30px;
+}
+.m1_section_in_txt .m1_t2{
+    margin-top:40px;
+    text-align:center;
+    font-size:16px;
+}
+.m1_form{
+    width:1200px;
+    margin:50px auto 150px auto;
+    font-size:14px;
+
+}
+.m1_form form ul{
+    background:#f5f5f5;
+    border-top:2px solid #666;
+    border-bottom:1px solid #666;
+}
+.m1_form form ul li:first-child{
+    padding-top:40px;
+}
+.m1_form form ul li:last-child{
+    padding-bottom:40px;
+}
+.m1_form form ul li{
+    margin-left:30px;
+    margin-top:6px;
+}
+.m1_form form ul li label{
+    width:150px;
+    display:inline-block;
+    vertical-align:top;
+}
+.m1_form form ul li input{
+    width:950px;
+    height:24px;
+}
+.m1_form p{
+    float:right;
+    margin-top:15px;
+}
+.m1_form p input{
+    display:inline-block;
+    border:1px solid #e8e8e8;
+    width:75px;
+    height:35px;
+    background:#f5f5f5;
+}
+.m1_form p .submit{
+    background:#253a7f;
+    color:#fff;
+}
+/* //////////////나눔경영/////////////// */	
+.m2section_in{
+    width:1200px;
+    margin:0 auto;
+    border-top:1px solid #ccc;
+    margin-top:150px;
+    padding-bottom:200px;
+}
+.manage2_title{
+    margin-top:30px;
+    font-size:44px;
+    font-weight:700;
+}
+.manage2_title p{
+    font-size:24px;
+    font-weight:300;
+}
+.manage2_vi{
+    position:relative;
+    width:900px;
+    height:300px;
+    background:url(../image/bg_contributionAbout.png) no-repeat;
+    background-size:cover;
+    left:300px;
+    margin-top:50px;
+}
+.manage2_vi p{
+    position:absolute;
+    font-size:18px;
+    font-weight:500;
+    color:#fff;
+    bottom:0px;
+    margin:10px;
+}
+
+.m2accordion{
+    margin-top:100px;
+}
+.m2accordion dl dt{
+    position:relative;
+    font-size:28px;
+    height:60px;
+    line-height:60px;
+    text-indent:20px;
+    border-bottom:1px solid #ccc;
+    cursor:pointer;
+}
+.m2accordion dl dt:first-child{border-top:2px solid #ccc;}
+
+.m2accordion dl dd img:first-child{
+    margin-right:40px;
+}
+.m2accordion dl dd img{
+    margin-top:20px;
+}
+.m2accordion dl dd{
+    border-bottom:1px solid #ccc;
+    padding-bottom:20px;
+    /* display:none; */
+}
+.m2accordion dl dd:first-child{
+    display:block;
+}
+.m2accordion dl dd p{
+    margin-top:30px;
+    margin-left:10px;
+}
+
+.m2footer{
+    font-size:24px;
+    font-weight:500;
+    margin-top:160px;
+}
+
+.add{
+    background:url(../image/add.png) no-repeat;
+    width:40px;
+    height:40px;
+    display:block;
+    position:absolute;
+    top:5px;
+    right:10px;
+    transform:scale(0.9);
+}
+.remove{
+    width:40px;
+    height:40px;
+    background:url(../image/remove.png) no-repeat;
+    display:block;
+    position:absolute;
+    top:5px;
+    right:10px;
+    transform:scale(0.9); 
+}
+
+.selected{
+    color:#fff;
+    background:#253a7f;
+}
+

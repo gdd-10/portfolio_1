@@ -1,0 +1,763 @@
+@import url(common.css);
+
+/* Header_____________________________________ */
+wrap{
+    font-family: 'Roboto', sans-serif;
+    font-weight:400;
+}
+header{
+    position:relative;
+    z-index:2000;
+    width:100%;
+    height:650px;
+    background-image:url(../image/winter_1.png);
+    transition:all 0.5s;
+}
+header:hover{
+    background-image:url(../image/visual2.png);
+}
+.top{
+    width:1200px;
+    margin:0 auto;
+    padding-top:50px;
+}
+.top .logo{
+    width:275px;
+    height:20px;
+    background-image:url(../image/logo.png);
+    margin-left:30px;
+    float:left;
+}
+
+
+/*///menu/// */
+.nav ul{
+    color:#fff;
+    float:right;
+    margin-right:30px;
+    
+}
+.nav ul li{
+    display:block;
+    float:left;
+    padding-left:40px;
+}
+.nav ul li a{
+    font-family: 'Roboto Slab', serif;
+    font-size:16px;
+    font-weight:400;
+}
+
+
+/* section_____________________________________ */
+section{
+    margin:10px auto;
+    width:1200px;
+}
+
+
+/* ///about///  */
+.aboutall{
+    position:absolute;
+    box-shadow:10px 10px 18px rgb(184, 184, 184);
+    width:1200px;
+    background:#fff;
+    margin:0 auto;
+    z-index:1500;
+    top:-1060px;
+    transition:all 2s;
+}
+.aboutall:hover{
+    top:650px;
+}
+
+#about h2{
+    font-family: 'Roboto Slab', serif;
+    font-size:48px;
+    font-weight:400;
+    margin:0 0 70px 30px;
+    text-align:left;
+}
+.aboutimg1{ text-align:right;}
+.about_1 ul li:first-of-type{
+    margin-right:50px;
+}
+.about_1 ul:first-child{
+    margin-top:100px;
+}
+.about_1 ul li{
+    float:left;
+    width:575px;
+}
+.about_1 .about_1ti{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:32px;
+    font-weight:500;
+}
+.about_1 .about_1ti p{
+    margin-left:20px;
+}
+.about_1 .aboutext{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:18px;
+}
+.about_1 .about_11{
+    margin-top:30px;
+    font-size:36px;
+    font-weight:500;
+}
+.about_1 .about_11 span{
+    margin-right:70px;
+}
+.about_1 .about_12{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:16px;
+    font-weight:100;
+    color:#333;
+    margin-top:10px;
+}
+.about_1 .about_12 span{
+    margin-right:217px;
+}
+.about_1 ul:last-child{
+    margin-top:150px;
+}
+.about_1 .abouti{
+    font-size:24px;
+    font-weight:700;
+    margin:20px 0 10px 10px;
+}
+.about_1 .aboutext{
+    margin-left:10px;
+}
+.aboutbar{
+    position:relative;
+    text-align:center;
+    width:130px;
+    height:80px;
+    bottom:-80px;
+    margin-left:1070px;
+    line-height:90px;
+}
+.aboutbar a{
+    font-size:20px;
+    border-bottom:3px solid #000;
+    padding-bottom:10px;
+    animation: morebar 3s infinite;
+
+}
+@-moz-keyframes morebar{
+    0%{opacity:0.5;}
+    25%{opacity:0;}
+    100%{opacity:1;}
+}
+@keyframes morebar{
+    0%{opacity:0.5;}
+    25%{opacity:0;}
+    100%{opacity:1;}
+}
+
+/* ///reservation/// */
+#reservation{
+    margin-top:200px;
+    box-shadow:10px 10px 18px rgb(184, 184, 184);
+    padding:80px 0 46px 0;
+    width:1200px;
+    background-image:url(../image/reservation.png);
+}
+#reservation h2{
+    font-family: 'Roboto Slab', serif;
+    font-size:40px;
+    text-align:center;
+    font-weight:400;
+    margin-top:35px;
+}
+#reservation h2 span{
+    font-size:36px;
+}
+.reser01 ul{margin:40px 0 0 40px;}
+.reser01 ul li{
+    float:left;
+    margin-right:40px;
+}
+.reser01 ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight:400;
+}
+.reser01 ul li:last-child{
+    float:right;
+    width:215px;
+    height:65px;
+    border:1px solid #000;
+    text-align:center;
+    background:#fff;
+    border-radius:5px;
+    transition:all 0.5s;
+}
+.reser01 ul li:last-child:hover{
+    background:#000;
+}
+.reser01 ul li:last-child a{
+    display:block;
+    font-size:24px;
+    font-weight:800;
+    line-height:65px;
+    color:#000;
+    transition:all 0.5s;
+}
+.reser01 ul li:last-child:hover a{
+    color:#fff;
+}
+.reser01 .room{
+    border-bottom:3px solid #000;
+    padding-bottom:10px;
+}
+.reser01 .active02{
+    position:relative;
+}
+.reser01 .active02 span{
+    display:block;
+    position:absolute;
+    border-bottom:3px solid #000;
+    width:0;
+    top:34px;
+    transform:translateX(-50%);
+    left:50%;
+    transition:all 0.5s;
+    opacity:0;
+}
+.reser01 .active02:hover span{
+    width:68px;
+    border-bottom:3px solid #000;
+    opacity:1;
+}
+
+.reser02{
+    margin-top:40px;
+    text-align:center;
+}
+.reser02>ul{
+    margin-left:90px;
+}
+.reser02>ul>li{
+    position:relative;
+    float:left;
+    width:300px;
+    height:100px;
+    margin-right:55px;
+}
+.reser02 .reser02_1 span{
+    position:absolute;
+    right:-29px;
+    top:30px;
+    display:inline-block;
+    border-right:1px solid #666;
+    height:40px;
+}
+.reser02 .reser02_2 span{
+    position:absolute;
+    right:-29px;
+    top:30px;
+    display:inline-block;
+    border-right:1px solid #666;
+    height:40px;
+}
+.reser02 .reser02_1 a{
+    display:inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:700;
+    font-size:24px;
+    line-height:100px;
+}
+.reser02_1{
+    position:relative;
+}
+.reser02_1 ul{
+    position:absolute;
+    left:20px;
+    top:0;
+    background:rgb(82, 82, 82);
+    height:0;
+    overflow:hidden;
+    transform:translateY(-100%);
+    transition:all 0.5s;
+}
+.reser02_1 ul li{
+    margin:10px;
+    width:250px;
+    background:#fff;
+    padding:5px 0;
+    cursor:pointer;
+}
+
+.reser02_1:hover ul{
+    height:477px;
+}
+
+.reser02_1 ul li img{
+    transform:scale(0.8);
+}
+.reser02_1 ul li p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:300;
+    font-size:18px;
+}
+
+
+
+
+.reser02 .reser02_2 a{
+    display:inline-block;
+    font-weight:1000;
+    font-size:16px;
+    line-height:100px;
+}
+.reser02 .reser02_3 ul{display:inline-block;}
+.reser02 .reser02_3 ul li{
+    float:left;
+    padding:0 50px;
+}
+.reser02 .reser02_3 ul li a{
+    line-height:100px;
+    font-size:24px;
+    font-weight:800;  
+}
+
+.reser03 ul{
+    margin:20px 0 0 90px;
+    font-size:16px;
+    font-weight:400;
+}
+.reser03 ul li{
+    width:300px;
+    margin-right:55px;
+    /* background:#ccc; */   
+}
+.reser03 ul li{
+    float:left;
+    text-align:center;
+}
+.reser03 .reser03_3{margin-left:-10px;}
+.reser03 .reser03_3 span{font-size:14px;margin-left:30px;}
+
+.reser04 ul{
+    float:right;
+    margin-right:40px;
+}
+.reser04{margin-top:50px;}
+.reser04 ul li{
+    height:30px;
+    float:left;
+    border-bottom:1px solid #000;
+}
+.reser04 a{
+    display:block;
+    line-height:30px;
+    text-align:center;
+}
+
+
+/* ///hotel/// */
+#hotel{
+    width:1200px;
+    margin: 0 auto;
+}
+#hotel h2{
+    margin-top:200px;
+    font-size:36px;
+    font-weight:800;
+    text-align:center;
+}
+.hotelmain{
+    position:relative;
+    overflow:hidden;
+    margin-top:80px;
+    width:1200px;
+    height:600px;
+    cursor:pointer;
+ 
+}
+.hotelmain ul{display:inline-block;}
+.hotelmain ul li{
+    width:1200px;
+    height:600px;
+    position:absolute;
+    float:left;
+   
+}
+.hotelmain .hotel_01{ 
+    position:relative;
+    width:600px;
+    height:600px;
+    z-index:100;
+    background-image:url(../image/hotel_01.png);
+    left:0;
+    transition:all 1s;
+}
+.hotelmain .hotel_02{
+    position:relative;
+    width:600px;
+    height:600px;
+    z-index:100;
+    background-image:url(../image/hotel_02.png);
+    right:0;
+    transition:all 1s;
+}
+.hotelmain .hotel_visual{
+    background-image:url(../image/palace.png);
+    -webkit-filter:grayscale(1);
+    filter:grayscale(1);
+    z-index:90;
+    transition:all 3s;
+}
+.hotelmain:hover .hotel_01{
+    left:-600px;
+}
+.hotelmain:hover .hotel_02{
+    right:-600px;
+}
+.hotelmain:hover .hotel_visual{
+    -webkit-filter:grayscale(0);
+    filter:grayscale(0);
+}
+
+.hotelli{
+    margin-top:20px;
+    position:relative;
+}
+.hotelli ul li{
+    float:left;
+    height:40px;
+    width:300px;
+    text-align:center;
+}
+.hotelli ul li a{
+    font-family: 'Roboto Slab', serif;
+    font-weight:100;
+    font-size:18px;
+    transition:all 0.5s;
+}
+.hotelli ul li a:hover{
+    font-weight:700;
+}
+.hotel_palace, .hotel_escape, .hotel_westin, .hotel_jeju{
+    position:absolute;
+    top:-620px;
+    left:0;
+    opacity:0;
+    width:1200px;
+    height:600px;
+    z-index:0;
+}
+.hotelli .palace .hotel_palace{
+    position:absolute;
+    background-image:url(../image/palace.png);
+    transition:all 1s;
+}
+.hotelli .palace:hover .hotel_palace{
+    background-image:url(../image/palace.png);
+    z-index:1000;
+    opacity:1;
+}
+.hotelli .escape .hotel_escape{
+    background-image:url(../image/escape.png);
+    transition:all 1s;
+}
+.hotelli .escape:hover .hotel_escape{
+    background-image:url(../image/escape.png);
+    z-index:1000;
+    opacity:1;
+}
+
+.hotelli .westin .hotel_westin{
+    background-image:url(../image/westin.png);
+    transition:all 1s;
+}
+.hotelli .westin:hover .hotel_westin{
+    background-image:url(../image/westin.png);
+    z-index:1000;
+    opacity:1;
+}
+
+.hotelli .jeju .hotel_jeju{
+    background-image:url(../image/jeju.png);
+    transition:all 1s;
+}
+.hotelli .jeju:hover .hotel_jeju{
+    background-image:url(../image/jeju.png);
+    z-index:1000;
+    opacity:1;
+}
+
+
+/* ///offer/// */
+#offer h2{
+    margin:200px 0 80px 0;
+    font-size:36px;
+    font-weight:800;
+    text-align:center;
+}
+.offerall ul{
+    width:390px;
+}
+.offerall .offerimg{
+    position:relative;
+    width:390px;
+    height:400px;
+    cursor:pointer;
+}
+.offerall .offerimg .blackbox{
+    position:absolute;
+    width:390px;
+    height:400px;
+    background:#000;
+    opacity:0;
+    transition:all 0.3s;
+}
+.offerall .offerimg a{
+    position:relative;
+    margin-left:155px;
+    font-size:16px;
+    line-height:400px;
+    color:#fff;
+    border:1px solid #fff;
+    padding:5px 20px;
+    opacity:0;
+    transition:all 0.3s;
+}
+.offerall .offer_1 .offerimg{
+    background-image:url(../image/section3-1.png);
+}
+.offerall .offer_2 .offerimg{
+    background-image:url(../image/section3-2.png);
+}
+.offerall .offer_3 .offerimg{
+    background-image:url(../image/section3-3.png);
+}
+.offer_1 .offerimg:hover .blackbox{opacity:0.7;}
+.offer_1 .offerimg:hover a{opacity:1;}
+
+.offer_2 .offerimg:hover .blackbox{opacity:0.7;}
+.offer_2 .offerimg:hover a{opacity:1;}
+
+.offer_3 .offerimg:hover .blackbox{opacity:0.7;}
+.offer_3 .offerimg:hover a{opacity:1;}
+
+.offerall .offerti{
+    font-family: 'Roboto Slab', serif;
+    font-size:20px;
+    font-weight:800;
+    text-align:center;
+    margin-top:20px;
+}
+.offerall .offertext{
+    margin:30px 20px 0 20px;
+    font-size:16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:300;
+    height:120px;
+}
+.offerall .offerdate{
+    float:left;
+    margin:0 0 0 20px;
+    font-size:16px;
+    line-height:24px;
+}
+.offerall .offerplace a{
+    display:block;
+    float:right;
+    width:150px;
+    height:24px;
+    color:#fff;
+    line-height:24px;
+    text-align:center;
+    font-size:14px;
+    font-weight:800;
+}
+.offer_1 .offerplace a{background:#917e6a;}
+.offer_2 .offerplace a{background:#dac6c6;}
+.offer_3 .offerplace a{background:#395e53;}
+
+.offerall ul{float:left;}
+.offerall ul:nth-child(-n+2){margin-right:15px;}
+
+#offer div:last-child{text-align:center;}
+
+#offer .more{
+    display:inline-block;
+    margin-top:70px;
+    border-bottom:1px solid #000;
+}
+#offer .more a{
+    height:30px;
+    line-height:30px;
+    font-weight:300;
+}
+
+/* ///restaurants/// */
+#restaurants h2{
+    margin:200px 0 330px 0;
+    font-size:36px;
+    font-weight:800;
+    text-align:center;
+}
+.rest{
+    width:1200px;
+    height:600px;
+    text-align:center;
+}
+
+.rest ul{
+    display:inline-block;
+    position:relative;
+}
+
+.rest ul li{
+    position:relative;
+    float:left;
+    width:200px;
+    height:130px;
+    margin-top:190px;
+    left:-100px;
+}
+.rest ul li img{
+    position:relative;
+    transform:scale(0.8);
+    opacity:0.7;
+    z-index:1000;
+    cursor:pointer;
+    transition:all 0.5s;
+}
+.rest ul li .restimg1, .restimg2, .restimg3{
+    position:absolute;
+    width:1200px;
+    height:600px;
+    top:-441px;
+    z-index:1;
+}
+.rest ul li .restimg1{   
+    background-image:url(../image/homuran.png);
+    opacity:1;
+    left:-300px;
+    z-index:2;
+    transition:all 1s;
+}
+.rest ul li .restimg2{   
+    background-image:url(../image/hokyungjeon.png);
+    opacity:0;
+    left:-500px;
+    transition:all 1s;
+}
+.rest ul li .restimg3{   
+    background-image:url(../image/jaju.png);
+    left:-700px;
+    opacity:0;
+    transition:all 1s;
+}
+
+.rest>ul>li>span{
+    position:absolute;
+    right:0;
+    top:47.5px;
+    height:35px;
+    border-right:2px solid rgb(202, 202, 202);
+    z-index:1000;
+}
+.rest ul .reslogo1:hover .restimg1{
+    opacity:1;
+    z-index:5;
+}
+.rest ul .reslogo1:hover img{
+    transform:scale(1);
+    opacity:1;
+}
+.rest ul .reslogo2:hover img{
+    transform:scale(1);
+    opacity:1;
+}
+.rest ul .reslogo3:hover img{
+    transform:scale(1);
+    opacity:1;
+}
+.rest ul .reslogo2:hover .restimg2{
+    opacity:1;
+    z-index:5;
+}
+.rest ul .reslogo3:hover .restimg3{
+    opacity:1;
+    z-index:5;
+}
+
+/* Footer_____________________________________ */
+footer{
+    color:#fff;
+    padding-bottom:30px;
+    width:100%;
+    background:#000;
+}
+.footerall{
+    position:relative;
+    padding-top:70px;
+    width:1200px;
+    margin:0 auto;
+}
+.flogo{
+    margin-left:30px;
+}
+.flogo, .footext, .familysites{
+    float:left;
+}
+.footext{
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left:70px;
+    font-size:14px;
+}
+.footext a span{
+    display:inline-block;
+    margin-right:30px;
+    font-weight:700;
+}
+.footext a span:nth-child(5){color:#92816a;}
+.footext a span:nth-child(n+7):nth-child(-n+8){margin-top:20px;}
+.footext p{
+    margin-top:40px;
+    color:#ccc;
+}
+.familysites{
+    position:absolute;
+    right:40px;
+    font-size:16px;
+}
+.familysites>ul>li{width:190px;}
+.familysites>ul>li:first-child{
+    border-bottom:2px #fff solid;
+    padding-bottom:10px;
+}
+.familysites ul li ul{
+    display:inline-block;
+}
+.familysites ul li ul li{
+    float:left;
+}
+.familysites ul li ul li a{
+    display:block;
+    width:37px;
+    height:37px;
+    margin-top:20px;
+}
+.familysites .j{
+    background-image:url(../image/j.png);
+}
+.familysites .kakao{
+    background-image:url(../image/kakao.png);
+}
+.familysites .insta{
+    background-image:url(../image/insta.png);
+}
+.familysites .youtube{
+    background-image:url(../image/youtube.png);
+}
+.familysites ul li ul li:nth-child(n+1):nth-child(-n+3){
+    margin-right:14px;
+}

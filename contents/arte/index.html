@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>ARTE</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/swiper.min.css">
+
+<style>
+    .swiper-container {
+        width:auto;
+        max-width: 100%;
+        height: 100%;
+        background:#333;
+    }
+    .swiper-slide{
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="top_menu">
+                <h1><a href="index.html"><img src="image/logo.png" alt="logo"></a></h1>
+                <div class="menu_btn">
+                    <img src="image/top_menu_btn.png" alt="탑메뉴버튼">
+                </div>
+            </div>
+        </header>
+
+        <div class="menu">
+            <div class="menu_close_btn">
+                <img src="image/close_btn.png" alt="메뉴닫기버튼">
+            </div>
+            <div class="menu_circle"></div>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="jeju.html"><img src="image/jeju_logo.png" alt="제주로고이미지"></a>
+                </li>
+                <li>
+                    <a href="yeosu.html"><img src="image/yeosu_logo.png" alt="여수로고이미지"></a>
+                </li>
+                <li>
+                    <a href="gangneung.html"><img src="image/gangneung_logo.png" alt="강릉로고이미지"></a>
+                </li>
+                <li>
+                    <a href="visit.html">VISIT</a>
+                </li>
+                <li>
+                    <a href="location.html">LOCATION</a>
+                </li>
+                <li class="copy">
+                    Copyright &copy; 2022 ARTE MUSEUM All rights reserved.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h2><img src="image/d_logo.png" alt="dstrick logo"></h2>
+                    <p class="b_box"></p>
+                    <img src="image/main.png" alt="메인비주얼">
+                    <div class="slide_txt1">
+                        <span class="who_we_are">WHO WE ARE</span>
+                        <p class="who_we_are_txt">
+                            아르떼뮤지엄(ARTE MUSEUM)은 세계 수준의 디지털 디자인
+                            컴퍼니 디스트릭트(d'strict)가 선보이는 몰입형 미디어아트
+                            전시관입니다.<br><br>
+                            디스트릭트는 2020년 9월말 제주 애월에서 첫 아르떼뮤지엄을 
+                            선보인 이후 영원한 자연(ETERNAL NATURE)이라는 주제 하에 
+                             새로운 전시 작품들을 제작하며 아르떼뮤지엄을 국내외 각 
+                             지역으로 확산하고 있습니다. 각 지역별 자연과 문화 유산을 
+                             활용해 차별화된 컨셉과 작품들로 구성된 다양한 아르떼뮤지엄을 
+                             방문해 보세요.
+                        </p>
+                        <span class="close"><img src="image/close_btn.png" alt="닫기버튼"></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/jeju_main.png" alt="제주 메인비주얼">
+                    <div class="slide_txt">
+                        <span><a href="jeju.html">VIEW MORE</a></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/yeosu_main.png" alt="여수 메인비주얼">
+                    <div class="slide_txt">
+                        <span><a href="yeosu.html">VIEW MORE</a></span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/gangneung_main.png" alt="강릉 메인비주얼">
+                    <div class="slide_txt">
+                        <span><a href="gangneung.html">VIEW MORE</a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+<!-- Swiper JS -->
+<script src="js/swiper.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true
+    });
+    </script>
+
+<!-- Script Source -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
